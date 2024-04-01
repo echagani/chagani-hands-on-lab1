@@ -1,0 +1,123 @@
+steps:
+  SUPPLIER-91da4e7d-37c9-4760-bb59-c862b05fe6b7:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Supplier data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a7c1e848-c919-4f3f-911c-f3f44df23422
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_SUPPKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9d5f2f65-b78f-46fb-bd72-c8437df8922f
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: S_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ee0a78bf-5eb7-467d-9a3f-a7cc48e30e14
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: S_ADDRESS
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f6d4a3a5-02b4-43c2-94de-7f1ea131eb53
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3a64d9ba-2114-4c6e-93a0-d5c85dd5c085
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: S_PHONE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4b75040b-e87b-4bdc-a42e-f39bb5ebdbdd
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: S_ACCTBAL
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5268d11e-fabf-4c37-8327-713183bb5ea4
+              stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
+            config: {}
+            dataType: VARCHAR(101)
+            defaultValue: ""
+            description: ""
+            name: S_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'SUPPLIER') }}
+      name: SUPPLIER
+      schema: ""
+      sqlType: Source
+      table: SUPPLIER
+      type: sourceInput
+    stepCounter: 91da4e7d-37c9-4760-bb59-c862b05fe6b7
